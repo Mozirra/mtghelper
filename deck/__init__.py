@@ -1,0 +1,1 @@
+"""The "Deck" Django applcation."""

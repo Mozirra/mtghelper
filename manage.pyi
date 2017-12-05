@@ -1,0 +1,1 @@
+"""Stubfile for manage.py."""

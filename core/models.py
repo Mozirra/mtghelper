@@ -10,6 +10,7 @@ class User(AbstractUser):
 
     class Meta:
         db_table = 'user'
+        ordering = ['last_name', 'first_name']
 
     user_id = models.AutoField(primary_key=True)
     birthdate = models.DateField(null=True, blank=True)

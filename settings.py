@@ -1,4 +1,4 @@
-"""Django settings for mtghelper project."""
+"""Django settings for MTG Helper project."""
 
 import os
 
@@ -46,7 +46,7 @@ ROOT_URLCONF = 'urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'mtghelper/templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,7 +70,7 @@ DATABASES = {
         'NAME': 'magic',
         'USER': 'magic',
         'PASSWORD': '12mgtc!',
-        'HOST': 'localhost',
+        'HOST': '10.0.0.169',
         'PORT': '5432',
     }
 }

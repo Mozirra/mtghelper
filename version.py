@@ -1,4 +1,7 @@
-"""The mtghelper version."""
+"""The MTG Helper version."""
 
 
-__version__ = '1.0.0.1'
+__all__ = ['__version__']
+
+
+__version__ = '1.1.0.0'

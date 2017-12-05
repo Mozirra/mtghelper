@@ -1,4 +1,4 @@
-"""Stub file for urls.py."""
+"""Stub file for deck.urls.py."""
 
 import typing
 

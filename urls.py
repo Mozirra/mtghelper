@@ -1,9 +1,12 @@
 """The MTG Helper URL configuration."""
 
-from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
+
+
+__all__ = ['urlpatterns']
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('deck/', include('deck.urls')),
+    path('data/', include('data.urls')),
 ]

@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Management tools for the Django application."""
+"""Management tools for the MTG Helper Django application."""
 
 import os
 import sys

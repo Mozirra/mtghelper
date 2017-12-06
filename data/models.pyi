@@ -5,7 +5,7 @@ import typing
 
 from django.db import models
 
-from core.models import User
+from core.models import Player
 from deck.models import Deck
 
 
@@ -74,7 +74,7 @@ class GameDeck(models.Model):
     game_deck_id: int
     game: Game
     deck: Deck
-    user: User
+    player: Player
     round_eliminated: int
     outcome: Outcome
     team_type: TeamType

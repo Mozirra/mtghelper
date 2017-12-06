@@ -4,7 +4,7 @@ import typing
 
 from django.db import models
 
-from core.models import User
+from core.models import Player
 
 
 class Archetype(models.Model):
@@ -51,7 +51,7 @@ class Deck(models.Model):
         
     deck_id: int
     name: str
-    user: User
+    player: Player
     commander: Commander
     archetype: Archetype
     is_active: bool

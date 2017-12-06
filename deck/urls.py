@@ -22,7 +22,7 @@ urlpatterns = [
         'new',
         CreateView.as_view(
             model=Deck,
-            fields=['name', 'user', 'commander', 'archetype']
+            fields=['name', 'player', 'commander', 'archetype']
         )
     ),
     path('details/<int:pk>', DetailView.as_view(model=Deck)),
@@ -30,7 +30,7 @@ urlpatterns = [
         'update/<int:pk>',
         UpdateView.as_view(
             model=Deck,
-            fields=['name', 'user', 'commander', 'archetype']
+            fields=['name', 'player', 'commander', 'archetype']
         )
     )
 ]

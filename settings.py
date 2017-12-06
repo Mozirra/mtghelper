@@ -78,7 +78,7 @@ DATABASES = {
 
 # Password validation
 
-AUTH_USER_MODEL = 'core.User'
+AUTH_USER_MODEL = 'core.Player'
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.'

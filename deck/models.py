@@ -51,15 +51,16 @@ class Commander(models.Model):
 
 class Deck(models.Model):
 
-    """The different decks of the users."""
+    """The different decks of the players."""
 
     class Meta:
         db_table = 'deck'
-        ordering = ['user__last_name', 'user__first_name', 'commander__name']
+        ordering = [
+            'player__last_name', 'player__first_name', 'commander__name']
 
     deck_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=64)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, models.CASCADE)
+    player = models.ForeignKey(settings.AUTH_USER_MODEL, models.CASCADE)
     commander = models.ForeignKey(Commander, models.CASCADE)
     archetype = models.ForeignKey(Archetype, models.CASCADE)
     is_active = models.BooleanField(default=True)

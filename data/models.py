@@ -86,7 +86,7 @@ class GameDeck(models.Model):
     game_deck_id = models.AutoField(primary_key=True)
     game = models.ForeignKey(Game, models.CASCADE)
     deck = models.ForeignKey('deck.Deck', models.CASCADE)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, models.CASCADE)
+    player = models.ForeignKey(settings.AUTH_USER_MODEL, models.CASCADE)
     round_eliminated = models.IntegerField()
     outcome = models.ForeignKey(Outcome, models.CASCADE)
     team_type = models.ForeignKey(TeamType, models.CASCADE)
